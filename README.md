@@ -90,6 +90,9 @@ The message format is:
   'timestamp': 1625402771.7205207
 }
 ```
+
+Description of the message fields:
+
 Field | Description |
 --- | ---
 id | Message id
@@ -193,6 +196,16 @@ The log messages in de validator are marked with `ERROR` if a failure occurs fol
 ```
 
 In this example the current message has a wrong message id (53 should be 54).
+
+Description of the log message fields:
+
+\# | Description | Example
+--- | --- | --
+1 | Date | 2021-07-04
+2 | Time | 17:28:04,284
+3 | Topic | sensors/valves/+ (where e.g. "2" stands for topic 2 and "+" stands for all topics)
+4 | Logging level | \[INFO\]
+5 | Message | Received {'id': 55, 'valve_id': '1', 'state': 'Valve closed', 'value': 'closed', 'timestamp': 1625412484.2793055} from sensors/valves/1 topic
 
 # Known issues
 * Synchronisation of the state machine between valve simulator and validator has some quicks especially after a failure
