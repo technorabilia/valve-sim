@@ -45,7 +45,7 @@ The EMQ X dashboard is available on port 18083 with username/password is admin/p
 # State machine
 Diagram of the state machine for the valve.
 
-![](https://github.com/technorabilia/valve-sim/blob/main/images/state-machine.gif)
+![](https://raw.githubusercontent.com/technorabilia/valve-sim/main/images/state-machine.png)
 
 In code:
 
